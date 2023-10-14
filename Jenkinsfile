@@ -8,6 +8,6 @@ node{
     }
     
     stage('deploy to tomcat'){
-        deploy adapters: [tomcat9(credentialsId: 'tomcat-creds', path: '', url: 'http://3.92.185.25:8085/')], contextPath: 'addressbook', war: '**/*.war'
+        deploy adapters: [tomcat8(credentialsId: '8bf4758e-c528-4f41-98d3-afcebacac6c6', path: '', url: 'http://15.206.73.20:8888/')], contextPath: 'demo-deploy', war: '**/*.war'
     }
 }

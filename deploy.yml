@@ -1,0 +1,21 @@
+---
+- hosts: prod-server
+  become: yes
+  tasks:
+
+  - name: apt update
+    command: sudo apt update
+
+  - name: install docker
+    apt:
+      pkg: docker.io
+      state: present
+
+  - name: start docker service
+    service:
+      name: docker
+      state: started
+      enabled: true
+
+  - name: deploy addressbook application
+    command: docker run -itd -p 8090:8080 shubhamkushwah123/addressbook:1.0

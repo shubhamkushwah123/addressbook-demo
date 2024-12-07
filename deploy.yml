@@ -4,7 +4,7 @@
   tasks:
 
   - name: apt update
-    command: sudo apt update
+    command: sudo apt update -y
 
   - name: install docker
     apt:

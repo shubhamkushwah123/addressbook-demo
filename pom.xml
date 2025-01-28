@@ -73,8 +73,8 @@
 	            <artifactId>maven-compiler-plugin</artifactId>
 	            <version>3.13.0</version> <!-- Use the latest version -->
 	            <configuration>
-	                <source>8</source>
-	                <target>8</target>
+	                <source>20</source>
+	                <target>20</target>
 	            </configuration>
         </plugin>
             <plugin>

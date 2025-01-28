@@ -12,6 +12,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <failOnMissingWebXml>false</failOnMissingWebXml>
         <vaadin.version>8.14.4</vaadin.version>
+        <maven.compiler.release>20</maven.compiler.release>
         <vaadin.plugin.version>${vaadin.version}</vaadin.plugin.version>
     </properties>
     <repositories>
@@ -70,7 +71,7 @@
 			<plugin>
 	            <groupId>org.apache.maven.plugins</groupId>
 	            <artifactId>maven-compiler-plugin</artifactId>
-	            <version>3.11.0</version> <!-- Use the latest version -->
+	            <version>3.13.0</version> <!-- Use the latest version -->
 	            <configuration>
 	                <source>8</source>
 	                <target>8</target>
